@@ -157,7 +157,7 @@ router.post("/przywracanie", (req, res) => {
         err => {
           if (err != null)
             res.render("error.pug", {
-              error: "Wystąpił błąd, spróbój ponownie później"
+              error: "Wystąpił błąd, spróbuj ponownie później"
             });
           else {
             mail(
